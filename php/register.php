@@ -19,7 +19,6 @@ function register(){
   $name = $_POST["name"];
   $user = $_POST["user"];
   $pas = $_POST["pas"];
-  $age = $_POST["age"];
   $contact = $_POST["contact"];
 
   if(empty($name) || empty($user) || empty($pas)){
