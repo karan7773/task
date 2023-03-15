@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign in</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="/css/login.css">
+  </head>
+  <body>
+
+    <div class="container mt-5">
+      <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+          <div id="login-box" class="col-md-12">
+            <form action="" method="post">
+              <h3 class="text-center form-label">Login</h3>
+              <div class="form-group">
+                <label for="user" class="form-label">Username:</label><br>
+                <input type="text" class="form-control" id="user" value="" /> <br />
+                </div>
+              <div class="form-group">
+                <label for="password" class="form-label">Password:</label><br>
+                <input type="password" class="form-control" id="pass" value="" /> <br />
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-success" onclick="submitDataLogin();">Login</button>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><a href="index.html">Go To Register</a></label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>

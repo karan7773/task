@@ -1,0 +1,26 @@
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+  function submitDataLogin(){
+    $(document).ready(function(){
+      var data = {
+        name: $("#name").val(),
+        user: $("#user").val(),
+        pas: $("#pas").val(),
+        action: $("#action").val(),
+      };
+
+      $.ajax({
+        url: 'register.php',
+        type: 'post',
+        data: data,
+        success:function(response){
+          alert(response);
+          if(response == "Login Successful"){
+            window.location.reload();
+          }
+        }
+      });
+    });
+  }
+</script>
